@@ -85,18 +85,18 @@ It prioritizes security and a seamless user experience with:
 src/
 ├── App.js
 ├── components/
-│   ├── Login/               
-│   ├── Home/                
-│   ├── Products/            
-│   ├── ProductItemDetails/  
-│   ├── Cart/               
-│   ├── CartItem/            
-│   ├── CartSummary/         
-│   ├── Header/              
-│   ├── ProtectedRoute/    
-│   └── NotFound/            
+│   ├── Login/               # Login page UI + JWT token logic
+│   ├── Home/                # Home route with featured product list
+│   ├── Products/            # Displays all available products via API
+│   ├── ProductItemDetails/  # Detailed view for each individual product
+│   ├── Cart/                # Lists all cart items and controls
+│   ├── CartItem/            # Displays a single item in the cart
+│   ├── CartSummary/         # Displays total price and checkout CTA
+│   ├── Header/              # Navigation bar with route links and logout
+│   ├── ProtectedRoute/      # Higher-order component to secure private routes
+│   └── NotFound/            # 404 page for invalid URLs
 └── context/
-    └── CartContext.js       
+    └── CartContext.js       # Global context to manage cart state  
 
 
 ---
