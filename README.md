@@ -83,20 +83,20 @@ It prioritizes security and a seamless user experience with:
 ## File Structure Overview
 
 src/
-├─ App.js
-├─ components/
-│ ├─ Login/
-│ ├─ Home/
-│ ├─ Products/
-│ ├─ ProductItemDetails/
-│ ├─ Cart/
-│ ├─ CartItem/
-│ ├─ CartSummary/
-│ ├─ Header/
-│ ├─ ProtectedRoute/
-│ └─ NotFound/
-└─ context/
-└─ CartContext.js
+├── App.js
+├── components/
+│   ├── Login/               
+│   ├── Home/                
+│   ├── Products/            
+│   ├── ProductItemDetails/  
+│   ├── Cart/               
+│   ├── CartItem/            
+│   ├── CartSummary/         
+│   ├── Header/              
+│   ├── ProtectedRoute/    
+│   └── NotFound/            
+└── context/
+    └── CartContext.js       
 
 
 ---
