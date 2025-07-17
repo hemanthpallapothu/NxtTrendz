@@ -82,6 +82,7 @@ It prioritizes security and a seamless user experience with:
 
 ## File Structure Overview
 
+```
 src/
 ├── App.js
 ├── components/
@@ -96,7 +97,8 @@ src/
 │   ├── ProtectedRoute/      # Higher-order component to secure private routes
 │   └── NotFound/            # 404 page for invalid URLs
 └── context/
-    └── CartContext.js       # Global context to manage cart state  
+    └── CartContext.js       # Global context to manage cart state
+``` 
 
 
 ---
