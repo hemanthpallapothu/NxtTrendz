@@ -23,21 +23,23 @@ It prioritizes security and a seamless user experience with:
 
 ## Component Structure
 
-| Component                  | Description                                                                                          |
-|----------------------------|------------------------------------------------------------------------------------------------------|
-| `App.js`                   | Main application entry – handles routing and wraps global contexts.                                  |
-| `Login`                    | User authentication – validates and logs in users with JWT tokens.                                   |
-| `Home`                     | Authenticated user dashboard and landing page.                                                       |
-| `Products`                 | Lists products dynamically via API; supports search/filter options.                                  |
-| `ProductItemDetails`       | Shows complete info for a specific product; add to cart feature.                                     |
-| `Cart`                     | Shopping cart contents, with quantity and removal controls.                                          |
-| `CartItem`                 | Represents an individual cart item; adjust quantity or remove.                                       |
-| `CartSummary`              | Displays order summary – total items and final amount.                                               |
-| `Header`                   | Navigation bar; displays route links and live cart count.                                            |
-| `ProtectedRoute`           | Guards routes for authenticated users (redirects if not logged in).                                  |
-| `NotFound`                 | Fallback UI for unmatched/invalid routes.                                                            |
-| `CartContext`              | Global state manager for the cart logic (add/remove/increment/decrement/clear cart).                 |
-
+```
+src/
+├── App.js
+├── components/
+│   ├── Login/               
+│   ├── Home/                
+│   ├── Products/            
+│   ├── ProductItemDetails/  
+│   ├── Cart/               
+│   ├── CartItem/            
+│   ├── CartSummary/         
+│   ├── Header/              
+│   ├── ProtectedRoute/      
+│   └── NotFound/            
+└── context/
+    └── CartContext.js       
+``` 
 ---
 
 ## Component Breakdown
@@ -77,29 +79,6 @@ It prioritizes security and a seamless user experience with:
 
 - **CartContext**  
   _Holds cart state globally, with methods for all necessary cart operations throughout the app._
-
----
-
-## File Structure Overview
-
-```
-src/
-├── App.js
-├── components/
-│   ├── Login/               # Login page UI + JWT token logic
-│   ├── Home/                # Home route with featured product list
-│   ├── Products/            # Displays all available products via API
-│   ├── ProductItemDetails/  # Detailed view for each individual product
-│   ├── Cart/                # Lists all cart items and controls
-│   ├── CartItem/            # Displays a single item in the cart
-│   ├── CartSummary/         # Displays total price and checkout CTA
-│   ├── Header/              # Navigation bar with route links and logout
-│   ├── ProtectedRoute/      # Higher-order component to secure private routes
-│   └── NotFound/            # 404 page for invalid URLs
-└── context/
-    └── CartContext.js       # Global context to manage cart state
-``` 
-
 
 ---
 
