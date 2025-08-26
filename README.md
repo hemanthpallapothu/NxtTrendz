@@ -16,10 +16,10 @@ It prioritizes security and a seamless user experience with:
 - Real-time cart management and checkout flow
 
 > **Demo Credentials**
-> - **Prime User**
+> **Prime User**
 > - **Username:** rahul  
 > - **Password:** rahul@2021
-> - **Non - Prime User**
+> **Non - Prime User**
 > - **Username:** raja  
 > - **Password:** raja@2021
 
